@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Untitled</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h2>Custom Link</h2>
+  <input type="text" id="url" value="https://" placeholder="https://example.com">
+  <button onclick="launchCustom()">Launch</button>
+  <label><input type="checkbox" id="sameTab"> Open in same tab (Default is new tab)</label>
+
+  <h2>Preset Links</h2>
+  <details id="presetLinks">
+    <summary>Show/Hide Preset Links</summary>
+    <div>
+      <button onclick="launch('https://arras.io')">Arras.io</button>
+      <button onclick="launch('https://12bucklemyshoe.kalbas.com.vn/')">Rammerhead</button>
+      <button onclick="launch('https://youtube.com')">YouTube</button>
+      <button onclick="launch('https://example.com')">Example.com</button>
+      <button id="lastLinkBtn" style="display:none;" onclick="launchLast()">Last Custom Link</button>
+    </div>
+  </details>
+
+  <div class="bottom-toggle">
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  </div>
+</body>
+</html>
