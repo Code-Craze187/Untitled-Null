@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  font-family: 'VT323', monospace;
+  padding: 20px;
+  background: #f4f4f4;
+  color: #000;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #f4f4f4;
+}
+h2 {
+  margin-top: 20px;
+}
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0078D7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: #005fa3;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* Dropdown styling */
+details {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+summary {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #eaeaea;
+  list-style: none;
+}
+details[open] summary {
+  border-bottom: 1px solid #ccc;
+}
+details div {
+  padding: 8px;
+  background: #f9f9f9;
+}
+details:not([open]) div {
+  display: none;
+}
+/* Dark mode adjustments */
+body.dark summary {
+  background-color: #333;
+}
+body.dark details div {
+  background: #2a2a2a;
+}
+body.dark button {
+  background-color: #3a8ddf;
+}
+body.dark button:hover {
+  background-color: #2a6cac;
+}
+.bottom-toggle {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
